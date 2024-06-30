@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap'); /*
+fim das fontsgoogle*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Oswald", sans-serif;
+    
+    
+}
+
+
+
+
+.header{
+    background-color: #1F2326;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    padding: 20px;
+    align-items: center;
+    height: 100px;
+    text-align: justify;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+   
+ 
+  }
+ #logo{
+   
+    height: 60px;
+}
+body,ul,li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+section{
+    background-color: ;
+    
+  }
+
+li{
+ display: inline;
+ float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 15px;
+    position: relative; /* Necessário para o pseudo-elemento */
+    color: #BFB7A8;
+}
+
+a::after {
+    content: ''; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Espessura da linha */
+    background-color: rgba(125, 129, 167, 0.618); /* Cor da linha */
+    transition: width 0.3s ease; /* Transição suave para a largura */
+}
+
+
+
+a:hover::after {
+    width: 100%; /* Expande a linha até a largura total do link */
+}
+
+ .social-nav {
+    position: absolute; /* Muda de fixed para absolute */
+    top: 50%; /* Posiciona no meio verticalmente */
+    right: 0; /* Alinha à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.social-link img {
+    width: 40px;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.234);
+    box-sizing: border-box;
+    display: flex;
+    
+    
+}
+
+
+.social-nav a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px; /* Espacamento para o link */
+    transition: color 0.3s ease,  0.3s ease, border 0.3s ease; /* Adiciona a transição */
+}
+
+.social-nav a:hover {
+    color: #fff; /* Cor do texto quando hover */
+    background-color:  rgba(125, 129, 167, 0.618); /* Cor de fundo quando hover */
+    border-radius: 5px; /* Bordas arredondadas */
+    transform: translate(-3px, 3px);
+    transition: 0.5s;
+}
+
+ 
+
+
+
+
+.content-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+
+
+}
+
+.titulo {
+    text-align: center;
+    max-width: 600px;
+    background-color: ;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.titulo h1 {
+    font-size: 3.8em;
+    color: #333;
+}
+.tith1{
+    padding-top: 20px;
+    font-family: "Oswald", sans-serif;
+
+    font-size:  ;
+}
+.p{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+     
+    font-size: 1.2em;
+}
+div > img{
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  text-align: 
+}
+div.img > img {
+
+    border-radius: 10% 30% 50% 70%;
+    width: 300px;
+    position: absolute; /* Muda de fixed para absolute */
+    top: 50%; /* Posiciona no meio verticalmente */
+    left: 0; /* Alinha à direita */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: ;
+    padding: 20px;
+}
+
+
+/* Estilização da pagina 2*/
+
+
+
+.new-section {
+    width: 800px;
+    height: 800px;
+    text-align: center;
+    margin: auto; /* Para centralizar horizontalmente */
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #F2F2F2;
+    
+}
+.p {
+    font-size:1.1em ;
+    text-align: justify;
+}
+mark {
+    background-color: #BFB7A8; /* Cor de fundo */
+    color: black; /* Cor do texto */
+    padding: 0.1em; /* Espaçamento interno */
+}
+
+div > img {
+
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+
+    border-radius: 10px;
+}
+
+/* Estilização da pagina 3*/
+
+
+
+section.especialidades {
+    padding: 40px 4%;
+    background-color: white;
+}
+
+h2 {
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Definindo o contêiner flex */
+.especialidades .flex {
+    display: flex;
+    gap: 60px;
+    justify-content: center; /* Centraliza os conteúdos horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+/* Estilizando cada caixa de especialidade */
+.especialidades .especialidade-box {
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 25px;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis para um layout responsivo */
+    max-width: 300px; /* Limite máximo para a largura das caixas */
+    text-align: center; /* Centralizar o texto dentro das caixas */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra leve */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves para o hover */
+}
+
+.especialidades .especialidade-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px black;
+}
+
+.especialidades .especialidade-box i {
+    font-size: 70px;
+    color: #1F2326;
+    display: block;
+    margin-bottom: 15px; /* Espaço abaixo do ícone */
+}
